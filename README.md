@@ -63,3 +63,7 @@ Sequel データから ActiveRecord データへの移行を行うスクリプ�
 
 - [gnuplot](http://www.gnuplot.info/ "gnuplot homepage") - プロットデータの可視化
 - [Gephi](http://gephi.org/ "Gephi, an open source graph visualization and manipulation software") - グラフ構造の解析、可視化
+
+## 中の人
+
+なにか分からないこと・気になることなどあれば、[@kei_s](https://twitter.com/kei_s "kei-s (kei_s) on Twitter") or/and [@june29](https://twitter.com/june29 "Jun OHWADA (本人確認済) (june29) on Twitter") までお気軽にどうぞ。
