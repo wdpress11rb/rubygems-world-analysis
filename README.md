@@ -1,31 +1,33 @@
-# WEB+DB PRESS Vol.68「Rubyわくわくナビ 最終回」利用コード
+# WEB+DB PRESS Vol.68「Rubyわくわくナビ」利用コード
 
 Ruby わくわくナビ最終回「データで見るRubyGemsの世界」で利用したコードです
 
-## lib/
+## ディレクトリ構成
+
+### lib/
 クローラと、収集したデータの格納のための Sequel モデル定義
 
-### lib/models/
+#### lib/models/
 データ処理のための ActiveRecord モデル定義と、マイグレーションファイル
 
-## scripts/
+### scripts/
 各種データ解析を行うスクリプト
 
-### scripts/importer/
+#### scripts/importer/
 Sequel データから ActiveRecord データへの移行を行うスクリプト
 
-## Rakefile
+### Rakefile
 データクローリングのための Rake タスク
 
-## data/
+### data/
 各種解析データと、可視化のためのスクリプト
 
-## db/
+### db/
 収集データ用 sqlite3 ファイル
 
-# Usage
+## Usage
 
-## データクローリング
+### データクローリング
 
 1. `$ bundle exec rake store:titles`
 
