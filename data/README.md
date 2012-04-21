@@ -3,7 +3,7 @@
 scripts/ の解析用コードの実行結果から、グラフやネットワークを出力する。
 
 - 折れ線グラフは [Gnuplot](http://www.gnuplot.info/) を使って描画し、eps ファイルを作成する
-- ネットワーク可視化は [Gephi](http://gephi.org/) を使って描画・調整を行い、スクリーンキャプチャなどで作成する
+- グラフ構造可視化は [Gephi](http://gephi.org/ "Gephi, an open source graph visualization and manipulation software") を使って描画・調整を行い、スクリーンキャプチャなどで作成する
 
 ## ダウンロード数ランキング download\_rank.eps
 
@@ -25,7 +25,7 @@ scripts/ の解析用コードの実行結果から、グラフやネットワ�
 
 ## 依存関係ネットワーク
 
-`data/gems.gexf` を [Gephi](http://gephi.org/) で読み込み。
+`data/gems.gexf` を [Gephi](http://gephi.org/ "Gephi, an open source graph visualization and manipulation software") で読み込み。
 
 # 連載記事に載せていない解析結果
 

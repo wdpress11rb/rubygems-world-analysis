@@ -35,8 +35,31 @@ Sequel データから ActiveRecord データへの移行を行うスクリプ�
 
 2. `$ bundle exec rake store:information`
 
-    すべての RubyGems の基礎情報を[Gem Methods - RubyGems.org API](http://guides.rubygems.org/rubygems-org-api/#gem)のAPIから取得
+    すべての RubyGems の基礎情報を [Gem Methods - RubyGems.org API](http://guides.rubygems.org/rubygems-org-api/#gem) の API から取得
 
 3. `$ bundle exec rake store:version`
 
-    すべての RubyGems のバージョン情報を[Gem Version Methods - RubyGems.org API](http://guides.rubygems.org/rubygems-org-api/#gemversion)のAPIから取得
+    すべての RubyGems のバージョン情報を [Gem Version Methods - RubyGems.org API](http://guides.rubygems.org/rubygems-org-api/#gemversion) の API から取得
+
+### クロールしたデータを解析用データとして整形
+
+0. `$ bundle exec ruby lib/models/setup.rb`
+
+    解析用の ActiveRecord データのセットアップ
+
+1. `$ bundle exec ruby scripts/importer/importer.rb`
+
+    クロールしたデータを ActiveRecord のデータに整形
+
+2. `$ bundle exec ruby scripts/importer/uri_importer.rb`
+
+    クロールしたデータのうち、URI に関するものを ActiveRecord のデータに整形
+
+3. `$ bundle exec ruby scripts/importer/version_importer.rb`
+
+    クロールしたデータのうち、バージョン情報に関するものを ActiveRecord のデータに整形
+
+## 使用ツール
+
+- [gnuplot](http://www.gnuplot.info/ "gnuplot homepage") - プロットデータの可視化
+- [Gephi](http://gephi.org/ "Gephi, an open source graph visualization and manipulation software") - グラフ構造の解析、可視化
