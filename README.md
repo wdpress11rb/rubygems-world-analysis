@@ -22,3 +22,19 @@ Sequel データから ActiveRecord データへの移行を行うスクリプ�
 
 ## db/
 収集データ用 sqlite3 ファイル
+
+# Usage
+
+## データクローリング
+
+1. `$ bundle exec rake store:titles`
+
+    `gem list -r` コマンドで得られるすべての RubyGems 名を sqlite に保存
+
+2. `$ bundle exec rake store:information`
+
+    すべての RubyGems の基礎情報を[Gem Methods - RubyGems.org API](http://guides.rubygems.org/rubygems-org-api/#gem)のAPIから取得
+
+3. `$ bundle exec rake store:version`
+
+    すべての RubyGems のバージョン情報を[Gem Version Methods - RubyGems.org API](http://guides.rubygems.org/rubygems-org-api/#gemversion)のAPIから取得
