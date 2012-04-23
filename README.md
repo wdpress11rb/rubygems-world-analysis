@@ -1,5 +1,7 @@
 # WEB+DB PRESS Vol.68「Rubyわくわくナビ」利用コード
 
+[WEB+DB PRESS Vol.68｜gihyo.jp … 技術評論社](http://gihyo.jp/magazine/wdpress/archive/2012/vol68 "WEB+DB PRESS Vol.68｜gihyo.jp … 技術評論社")
+
 Ruby わくわくナビ最終回「データで見るRubyGemsの世界」で利用したコードです
 
 ## ディレクトリ構成
